@@ -9,7 +9,9 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <title>Antigonish Farmers' Market</title>
   </head>
-  <body class="font-serif bg-foreground text-white container mx-auto">
+  <body
+    class="font-serif bg-gradient-to-b from-foreground to-foreground-darker bg-foreground text-white container mx-auto"
+  >
     <header class="mb-10">
       <div class="container mx-auto flex justify-between items-end pt-5 px-5">
         <img src="./public/market-logo.png" class="h-20" />
@@ -20,12 +22,14 @@
         </div>
       </div>
     </header>
-    <hr />
+    <div class="border-b-2"></div>
     <section class="mt-10">
-      <div class="flex flex-col gap-10 items-center p-5">
-        <img src="./public/people.png" class="h-60" />
-        <div class="text-center mt-5">
-          <h1 class="text-3xl font-bold mb-5">
+      <div class="flex flex-col items-center p-5">
+        <img src="./public/people.png" class="h-60 mb-5" />
+        <div class="flex flex-col items-center text-center mb-12">
+          <h1
+            class="font-title text-3xl font-bold mb-5 border-b-white border-b-2 p-5 w-fit"
+          >
             Welcome to the Antigonish Farmers' Market
           </h1>
           <p class="text-lg px-48">
@@ -55,14 +59,65 @@
     <section class="p-20 flex items-center justify-center gap-10">
       <img
         src="./public/Antigonish-Farmers-Market.jpeg"
-        class="w-1/2 drop-shadow-lg skew-y-2"
+        class="w-1/2 drop-shadow-xl skew-y-2"
       />
       <p class="text-lg text-center w-1/3">
         In our new location, the AFM is able to continue thriving and serving
         our community in many unique and exciting ways.
       </p>
     </section>
-    <hr />
+    <section class="px-20 mb-20 flex items-center justify-center gap-10">
+      <p class="text-lg text-center w-1/3">
+        The members, vendors, volunteers, and wider community of Antigonish and
+        the surrounding areas thank you for generous support.
+      </p>
+      <img
+        src="./public/locharber-growers.jpg"
+        class="w-1/2 drop-shadow-xl -skew-y-2"
+      />
+    </section>
+    <section class="flex flex-col items-center gap-12 my-28">
+      <h1 class="font-title font-bold text-3xl">Featured Products</h1>
+      <div class="flex justify-center items-center gap-10">
+        <div class="flex flex-col items-center hover:cursor-pointer">
+          <img
+            src="./public/products/Bath-Bomb.jpg"
+            class="rounded-2xl h-52 w-52 mb-5 shadow-lg"
+          />
+          <span class="text-lg font-bold mb-2">Large Bath Bomb</span>
+          <span class="text-focus">$11.00</span>
+          <span>by Funky Munkys Bath & Body</span>
+        </div>
+        <div class="flex flex-col items-center hover:cursor-pointer">
+          <img
+            src="./public/products/chicken_curry.jpg"
+            class="rounded-2xl h-52 w-52 mb-5 shadow-lg"
+          />
+          <span class="text-lg font-bold mb-2">Chicken Curry</span>
+          <span class="text-focus">$14.00</span>
+          <span>by Spicy Kitchen</span>
+        </div>
+        <div class="flex flex-col items-center hover:cursor-pointer">
+          <img
+            src="./public/products/crossroad-susage.jpg"
+            class="rounded-2xl h-52 w-52 mb-5 shadow-lg"
+          />
+          <span class="text-lg font-bold mb-2">Honey Garlic Sausages</span>
+          <span class="text-focus">$13.00</span>
+          <span>by Crossroads Valley Farm</span>
+        </div>
+        <div class="flex flex-col items-center hover:cursor-pointer">
+          <img
+            src="./public/products/Dish-Scrubbies.jpg"
+            class="rounded-2xl h-52 w-52 mb-5 shadow-lg"
+          />
+          <span class="text-lg font-bold mb-2">Dish Scrubbies</span>
+          <span class="text-focus">$3.00</span>
+          <span>by Cornect Crocheting</span>
+        </div>
+      </div>
+    </section>
+    <div class="border-b-2"></div>
     <footer class="my-10 grid grid-rows-1 grid-cols-4">
       <div class="flex flex-col items-center gap-6 col-span-2 w-4/5">
         <img src="./public/market-logo.png" />
@@ -71,7 +126,7 @@
         >
       </div>
       <div class="flex flex-col">
-        <span class="text-xl font-bold mb-10">Contact</span>
+        <span class="text-xl font-bold mb-10 font-title">Contact</span>
         <span>902-867-7479</span>
         <div class="flex gap-4">
           <svg
@@ -131,11 +186,10 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <span class="text-xl font-bold mb-10">Address</span>
+        <span class="text-xl font-bold mb-10 font-title">Address</span>
         <span>20 Exhibition Lane</span>
         <span>Antigonish, Nova Scotia</span>
         <span>B2G 0H9</span>
-        <span>902-867-7479</span>
       </div>
     </footer>
   </body>
