@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <link href="./style.css" rel="stylesheet" />
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./styles/compiled-styles.css" rel="stylesheet" />
     <title>Antigonish Farmers' Market</title>
   </head>
   <body class="font-serif bg-foreground text-white container mx-auto">
@@ -39,13 +37,13 @@
         <span class="cursor-pointer active:text-focus">Contact</span>
       </div>
     </header>
-    <div class="mx-5 border-b-2"></div>
+    <div class="mx-5 border-b-2 border-focus"></div>
     <section class="mt-8">
       <div class="flex flex-col items-center p-5">
         <img src="./public/people.png" class="md:h-60 mb-8" />
         <div class="flex flex-col items-center text-center mb-6">
           <h1
-            class="font-title text-lg p-3 md:text-3xl font-bold mb-5 border-b-white border-b-2 md:p-5 w-fit"
+            class="font-title text-lg p-3 md:text-3xl font-bold mb-5 border-b-focus border-b-2 md:p-5 w-fit"
           >
             Welcome to the Antigonish Farmers' Market
           </h1>
@@ -155,7 +153,7 @@
         </div>
       </div>
     </section>
-    <div class="mx-5 border-b-2"></div>
+    <div class="mx-5 border-b-2 border-b-focus"></div>
     <footer class="p-10 grid gap-y-5 md:grid-rows-1 md:grid-cols-4 grid-cols-2">
       <div
         class="flex md:flex-col items-center gap-6 col-span-4 md:col-span-2 md:w-4/5"
